@@ -1,70 +1,24 @@
-# Quiz app
-
-![quiz-images](readme/app-images.png)
-
-App quiz feito para matéria de programação Web Feito com android studio
-
-# Conhecimetos adquiridos
-* Trabalhar com mais de uma **activity**
-* O uso de **RadioGroup** e **RadioButtom**
-* Usar o **Constraint layout**
-* Enviar **dados** de uma **activity** para outra
-* Utilização do `MediaPlayer` para tocar um som no aplicativo
-
-# Questões do Quiz
-
-As questões foram adicionadas pela classe `Question`
-
-Classe `Question`
-
-```java
-public class Question {
-
-    private String question;
-    private List<String> answers = new ArrayList<>();
-    private String rightAnswer;
-
-    public Question(String question,String rightAnswer, String ... answers ) {
-        this.question = question;
-        this.rightAnswer = rightAnswer;
-        this.answers.add(answers[0]);
-        this.answers.add(answers[1]);
-        this.answers.add(answers[2]);
-        this.answers.add(answers[3]);
-    }
-
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public List<String> getAnswers() {
-        return answers;
-    }
-
-    public String getRightAnswer() {
-        return rightAnswer;
-    }
-}
-```
-
-
-Exemplo da utilização da classe `Question`:
-
-```java
-questions = new ArrayList<Question>(){
-            {
-
-                add(new Question("O que é Bitcoin?", "B", "Moeda governamental", "Crypto Moeda", "Uma rede decentralizada", "Software de Datamining"));
-
-                add(new Question("Quem foi que criou o Bitcoin?", "B", "Margaret Hamilton", "Satoshi Nakamoto", "Alan Turing", "Gustavo Guanabara"));
-
-                add(new Question("Quem foi o primeiro programador?", "D", "Steve Jobs", "Linus Torvalds", "Alan Turing", "Ada Lovelace"));
-            }
-        };
-```
-
-___
-<h4 align="center">
-    Feito com 💜 by  Vitor Carmo
-</h4>
+# Quiz App
+# Overview
+	This work focuses on the construction of an examination system called Quiz that is built on android and uses multiple-choice questions. This application will be designed for educational purposes, and it gives users the ability to practice answering multiple-choice questions in preparation for a variety of exams that are held at the state, provincial, and national levels. The primary objective of the program is to provide users with the opportunity to practice for subjective examinations that are used in admissions and recruitment processes, with a particular emphasis on the field of computer science. This quiz offers users three options to assist them in providing accurate responses to the questions it presents: (i) Skip, (ii) Next, and (iii) Submit. These options are commonly referred to as life lines. One single use is all that is permitted for each of these functions. During the game of the quiz, it provides feedback on the user's progress, and at the end, the app displays the user's score.
+# Project Scope
+As this application is being developed for educational purpose so it will be mainly used by teachers and students for quizzes.
+# Technologies
+The following technologies will be required in the development of this app:
+1.	IntelliJ
+2.	Java
+3.	Android
+# Features
+Following are the features of the application:
+•	Records student scores
+•	Time for each question
+•	Calculate score of right answers
+•	Ability to add questions
+•	Credentials of a student
+•	Maintain profile
+# Pattern
+The screen pattern will be as follows:
+1.	Student Credentials Screen
+2.	Quiz Start Screen
+3.	Quiz Questions Screens (depends on questions)
+4.	Quiz End Screen
