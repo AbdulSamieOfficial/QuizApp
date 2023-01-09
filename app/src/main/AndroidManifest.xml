@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quiz">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/screen1_img"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WrongAnswerBuzz" android:screenOrientation="locked"/>
+        <activity android:name=".Result" android:screenOrientation="locked"/>
+        <activity android:name=".RightAnswerBuzz" android:screenOrientation="locked"/>
+        <activity android:name=".AddingQuestions" android:screenOrientation="locked"/>
+        <activity android:name=".StartActivity" android:screenOrientation="locked"/>
+        <activity android:name=".LocationActivity" android:screenOrientation="locked"/>
+        <activity android:name=".TemperatureActivity" android:screenOrientation="locked"/>
+        <activity android:name=".MainActivity" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
